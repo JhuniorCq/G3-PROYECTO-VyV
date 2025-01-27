@@ -313,7 +313,7 @@ export class OrderModel {
       // Obtenemos el Monto Total a pagar
       let amountTotal = findAmountTotal(productList);
 
-      if (checkoutData.deliveryOption === DELIVERY_OPTIONS.SHIPPING) {
+      if (checkoutData.deliveryOption === "shipping") {
         amountTotal += SHIPPING_COST;
       }
 
