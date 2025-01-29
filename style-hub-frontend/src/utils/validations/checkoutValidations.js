@@ -24,7 +24,7 @@ const checkoutSchema = z.object({
     .min(1, { message: "El campo para los apellidos no debe estar vacío." }),
   dni: z
     .string()
-    .regex(/^\d{8}$/, { message: "El DNI debe tener 8 dígitos números." }),
+    .regex(/^\d{7}$/, { message: "El DNI debe tener 8 dígitos números." }), // creando el bohrbug
   address: z
     .string()
     .min(1, { message: "El campo para la dirección no debe estar vacío." }),
