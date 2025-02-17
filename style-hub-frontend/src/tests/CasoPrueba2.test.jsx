@@ -26,7 +26,7 @@ const invalidCheckoutData = {
   [INPUT_NAMES.PAYMENT_OPTION]: PAYMENT_OPTIONS[0].text, // Simulamos que se seleccionó Paypal
 };
 
-describe("Validar que el sistema no procese pagos con datos incompletos o inválidos", () => {
+describe("CP - 002: Manejo de error cuando el usuario intenta pagar con datos incompletos o inválidos.", () => {
   it("Debe mostrar un modal de error y detener el flujo si los datos son inválidos", async () => {
     // Simula el evento de formulario
     const event = { preventDefault: vi.fn() };

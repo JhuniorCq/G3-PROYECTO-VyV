@@ -4,8 +4,7 @@ import { URL_SERVER } from "../../utils/constants";
 
 export const ProductsProvider = ({ children }) => {
   const { responseGet, loadingGet, errorGet, getData } = useGet(
-    `${URL_SERVER}/product`,
-    true
+    `${URL_SERVER}/product`
   );
 
   return (
